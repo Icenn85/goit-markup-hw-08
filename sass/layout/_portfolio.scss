@@ -1,6 +1,11 @@
 .examples {
-  padding-top: var(--tipical-padding);
-  padding-bottom: var(--tipical-padding);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: var(--tipical-padding);
+    padding-bottom: var(--tipical-padding);
+  }
 }
 
 .filtr-menu__list {

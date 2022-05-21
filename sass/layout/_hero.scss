@@ -2,7 +2,7 @@
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
-  width: 100%;
+  max-width: 480px;
   height: 400px;
   margin: 0 auto;
   background-image: linear-gradient(
@@ -10,34 +10,64 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/hero-Img1.jpg");
+    url("../images/hero-img-mob.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   background-color: #2f303a;
-
-  @media screen and (min-width: 768px) {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/hero-Img1.jpg");
+      url("../images/hero-img-mob-2x.jpg");
+  }
+
+  @media screen and (min-width: 768px) {
     max-width: 768px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero-img-tab.jpg");
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/hero-img-tab-2x.jpg");
+    }
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../images/hero-Img1.jpg");
     max-width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero-Img1.jpg");
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/hero-img-2x.jpg");
+    }
   }
 }
 
@@ -51,6 +81,7 @@
   text-transform: uppercase;
 
   color: #ffffff;
+
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
