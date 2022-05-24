@@ -21,7 +21,7 @@
   <body>
     <!-- Шапка сайта -->
     <header class="header">
-      <div class="container">
+      <div class="container"> 
         <nav class="navigation">
           <a href="./index.html" class="navigation__logo link logo" lang="en">
             Web<span class="navigation__logo header__part">Studio</span>
@@ -65,44 +65,58 @@
           </li>
         </ul>
       </div>
-      <div class="mob-menu">
+      <div class="mob-menu is-hidden">
         <button type="button" class="menu-close-btn"><svg  width="40" height="40">
                 <use href="./images/icon.svg#icon-close_40px"></use></svg
               ></button>
+              <div class="mob-menu__cover">
               <ul class="mob-menu__list list">
             <li class="mob-menu__item">
               <a
                 href="./index.html"
-                class="mob-menu__link current link link-header"
+                class="mob-menu__link mob-menu__link--current link"
                 >Студия</a>
             </li>
             <li class="mob-menu__item">
-              <a href="./portfolio.html" class="mob-menu__link link link-header"
+              <a href="./portfolio.html" class="mob-menu__link link"
                 >Портфолио</a>
             </li>
             <li class="mob-menu__item">
-              <a href="" class="mob-menu__link link link-header">Контакты</a>
+              <a href="" class="mob-menu__link link">Контакты</a>
             </li>
           </ul>
+          </div>
+          <div class="mob-contact">
           <ul class="mob-contact__list list">
           <li class="mob-contact__item">
             <a
-              href="mailto:info@devstudio.com"
-              class="mob-contact__link link link-header"
-              ><svg class="mob-contact__icon" width="16" height="12">
-                <use href="./images/icon.svg#icon-header-envelope"></use></svg
-              >info@devstudio.com</a>
-          </li>
-          <li class="mob-contact__item">
-            <a
               href="tel:+380961111111"
-              class="mob-contact__link link link-header"
-              ><svg class="mob-contact__icon" width="10" height="16">
-                <use href="./images/icon.svg#icon-header-smartphone"></use></svg
+              class="mob-contact__tel link link-header"
               >+38 096 111 11 11</a
             >
           </li>
+          <li class="mob-contact__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mob-contact__mail link link-header"
+              >info@devstudio.com</a>
+          </li>
         </ul>
+        <ul class="mob-soc__list list">
+            <li class="mob-soc__item">
+              <a href="" class="mob-soc__link link">Instagram</a>
+            </li>
+            <li class="mob-soc__item">
+              <a href="" class="mob-soc__link link">Twitter</a>
+            </li>
+            <li class="mob-soc__item">
+              <a href="" class="mob-soc__link link">Facebook</a>
+            </li>
+            <li class="mob-soc__item">
+              <a href="" class="mob-soc__link link">LinkedIn</a>
+            </li>
+          </ul>
+          </div>
       </div>
     </header>
 
@@ -402,8 +416,8 @@
       </section>
     </main>
 
-    <!-- Футер -->
-    <!-- <footer class="footer">
+    <!-- Футер --> 
+      <footer class="footer">
       <div class="container">
         <div class="footer__main-contact">
           <a href="./index.html" class="navigation__logo link logo" lang="en">
@@ -482,7 +496,8 @@
           </div>
         </form>
       </div>
-    </footer> -->
+    </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__close-btn" data-modal-close>
@@ -537,5 +552,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script> 
+    <script src="./js/menu.js"></script>
   </body>
 </html>

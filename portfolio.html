@@ -26,16 +26,23 @@
           <a href="./index.html" class="navigation__logo link logo" lang="en">
             Web<span class="navigation__logo header__part">Studio</span>
           </a>
+          <button type="button" class="menu-open-btn">
+            <svg width="40" height="40">
+              <use href="./images/icon.svg#icon-menu_40px"></use>
+            </svg>
+          </button>
           <ul class="sitenav-list list">
             <li class="sitenav-list__item">
-              <a href="./index.html" class="sitenav-list__link link link-header"
+              <a
+                href="./index.html"
+                class="sitenav-list__link current link link-header"
                 >Студия</a
               >
             </li>
             <li class="sitenav-list__item">
               <a
                 href="./portfolio.html"
-                class="sitenav-list__link current link link-header"
+                class="sitenav-list__link link link-header"
                 >Портфолио</a
               >
             </li>
@@ -66,6 +73,62 @@
             >
           </li>
         </ul>
+      </div>
+      <div class="mob-menu is-hidden">
+        <button type="button" class="menu-close-btn">
+          <svg width="40" height="40">
+            <use href="./images/icon.svg#icon-close_40px"></use>
+          </svg>
+        </button>
+        <div class="mob-menu__cover">
+          <ul class="mob-menu__list list">
+            <li class="mob-menu__item">
+              <a href="./index.html" class="mob-menu__link link">Студия</a>
+            </li>
+            <li class="mob-menu__item">
+              <a
+                href="./portfolio.html"
+                class="mob-menu__link mob-menu__link--current link"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mob-menu__item">
+              <a href="" class="mob-menu__link link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mob-contact">
+          <ul class="mob-contact__list list">
+            <li class="mob-contact__item">
+              <a
+                href="tel:+380961111111"
+                class="mob-contact__tel link link-header"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mob-contact__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mob-contact__mail link link-header"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mob-soc__list list">
+            <li class="mob-soc__item">
+              <a href="" class="mob-soc__link link">Instagram</a>
+            </li>
+            <li class="mob-soc__item">
+              <a href="" class="mob-soc__link link">Twitter</a>
+            </li>
+            <li class="mob-soc__item">
+              <a href="" class="mob-soc__link link">Facebook</a>
+            </li>
+            <li class="mob-soc__item">
+              <a href="" class="mob-soc__link link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -100,6 +163,10 @@
               <div class="examples__top-cover">
                 <a href=""
                   ><img
+                    srcset="
+                      ./images/Технокряк.jpg    1x,
+                      ./images/Технокряк-2x.jpg 2x
+                    "
                     src="./images/Технокряк.jpg"
                     alt="Веб-сайт Технокряк"
                     width="370"
@@ -119,6 +186,10 @@
               <div class="examples__top-cover">
                 <a href=""
                   ><img
+                    srcset="
+                      ./images/ПостерNew.jpg    1x,
+                      ./images/ПостерNew-2x.jpg 2x
+                    "
                     src="./images/ПостерNew.jpg"
                     alt="Дизайн постера New Orlean vs Golden Star"
                     width="370"
@@ -140,6 +211,10 @@
               <div class="examples__top-cover">
                 <a href=""
                   ><img
+                    srcset="
+                      ./images/Ресторан.jpg    1x,
+                      ./images/Ресторан-2x.jpg 2x
+                    "
                     src="./images/Ресторан.jpg"
                     alt="Приложение ресторана Seafood"
                     width="370"
@@ -159,8 +234,12 @@
             </li>
             <li class="examples__item">
               <div class="examples__top-cover">
-                <a href=""
-                  ><img src="./images/Prime.jpg" alt="Проект Prime" width="370"
+                <a href="">
+                  <img
+                    srcset="./images/Prime.jpg 1x, ./images/Prime-2x.jpg 2x"
+                    src="./images/Prime.jpg"
+                    alt="Проект Prime"
+                    width="370"
                 /></a>
                 <p class="examples__top-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
@@ -179,6 +258,7 @@
               <div class="examples__top-cover">
                 <a href=""
                   ><img
+                    srcset="./images/Boxes.jpg 1x, ./images/Boxes-2x.jpg 2x"
                     src="./images/Boxes.jpg"
                     alt="Приложение проекта Boxes"
                     width="370"
@@ -200,6 +280,10 @@
               <div class="examples__top-cover">
                 <a href=""
                   ><img
+                    srcset="
+                      ./images/Inspiration.jpg    1x,
+                      ./images/Inspiration-2x.jpg 2x
+                    "
                     src="./images/Inspiration.jpg"
                     alt="Веб-сайт Inspiration has no Borders"
                     width="370"
@@ -221,6 +305,7 @@
               <div class="examples__top-cover">
                 <a href=""
                   ><img
+                    srcset="./images/Издание.jpg 1x, ./images/Издание-2x.jpg 2x"
                     src="./images/Издание.jpg"
                     alt="Дизайн издание Limited Edition"
                     width="370"
@@ -241,7 +326,11 @@
             <li class="examples__item">
               <div class="examples__top-cover">
                 <a href=""
-                  ><img src="./images/LAB.jpg" alt="Проект LAB" width="370"
+                  ><img
+                    srcset="./images/LAB.jpg 1x, ./images/LAB-2x.jpg 2x"
+                    src="./images/LAB.jpg"
+                    alt="Проект LAB"
+                    width="370"
                 /></a>
                 <p class="examples__top-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
@@ -260,6 +349,7 @@
               <div class="examples__top-cover">
                 <a href=""
                   ><img
+                    srcset="./images/Growing.jpg 1x, ./images/Growing-2x.jpg 2x"
                     src="./images/Growing.jpg"
                     alt="Приложение Growing Business"
                     width="370"
@@ -373,5 +463,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
