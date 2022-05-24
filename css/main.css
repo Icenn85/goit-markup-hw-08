@@ -1430,7 +1430,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .examples__top-text {
     padding: 63px 24px;
   }
