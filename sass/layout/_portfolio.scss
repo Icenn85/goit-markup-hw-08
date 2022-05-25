@@ -17,6 +17,10 @@
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
   }
 }
@@ -94,11 +98,6 @@
   &:nth-child(3n) {
     @media screen and (min-width: 1200px) {
       margin-right: 0;
-    }
-  }
-  &:nth-last-child(-n + 3) {
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 0;
     }
   }
 
