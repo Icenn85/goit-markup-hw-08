@@ -561,7 +561,7 @@ img {
   }
 }
 
-.menu-open-btn::hover .mob-menu {
+.mob-menu.is-hidden {
   transform: translateX(100%);
 }
 
@@ -575,6 +575,11 @@ img {
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--header-color);
+  transition: color var(--duration-timing-function);
+}
+
+.mob-menu__link:hover, .mob-menu__link:focus {
+  color: var(--accent-color);
 }
 
 .mob-menu__link--current {
@@ -1108,7 +1113,6 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 
@@ -1419,9 +1423,8 @@ img {
   letter-spacing: 0.03em;
   background: rgba(33, 150, 243, 0.9);
   color: #ffffff;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform var(--duration-timing-function);
-  overflow: auto;
 }
 
 @media screen and (min-width: 768px) {

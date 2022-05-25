@@ -25,11 +25,11 @@
   padding: 0;
   border: transparent;
   background-color: transparent;
+  transition: fill var(--duration-timing-function);
 
   @media screen and (min-width: 768px) {
     display: none;
   }
-  transition: fill var(--duration-timing-function);
 
   &:hover,
   &:focus {
@@ -149,11 +149,11 @@
   border: transparent;
   background-color: transparent;
   cursor: pointer;
+  transition: fill var(--duration-timing-function);
 
   @media screen and (min-width: 768px) {
     display: none;
   }
-  transition: fill var(--duration-timing-function);
 
   &:hover,
   &:focus {
@@ -185,7 +185,7 @@
     display: none;
   }
 
-  .menu-open-btn::hover & {
+  &.is-hidden {
     transform: translateX(100%);
   }
 }
@@ -201,6 +201,12 @@
   letter-spacing: 0.02em;
 
   color: var(--header-color);
+  transition: color var(--duration-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .mob-menu__link--current {
